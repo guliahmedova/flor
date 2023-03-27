@@ -1,0 +1,49 @@
+.about {
+    .row {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+
+        .vidoe-container {
+            flex: 1 1 40rem;
+            position: relative;
+            video {
+                width: 100%;
+                border: 1.5rem solid white;
+                border-radius: 0.5rem;
+                height: 100%;
+                object-fit: cover;
+                box-shadow: $boxShadow;
+            }
+            h3{
+                position: absolute;
+                top: 35%;
+                width: 100%;
+                transform: translateY(50%);
+                font-size: 3rem;
+                background: white;
+                padding: 1rem 2rem;
+                text-align: center;
+                mix-blend-mode: screen;
+            }
+        }
+
+        .content{
+            flex: 1 1 40rem;
+            h3{
+                font-size: 3rem;
+                color: $dark;
+            }
+            p{
+                font-size: 1.5rem;
+                color: gray;
+                padding: .5rem 0;
+                padding-top: 1rem;
+                line-height: 1.5;
+            }
+        }
+    }
+}

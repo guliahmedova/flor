@@ -1,0 +1,93 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $milk-white;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: $boxShadow;
+
+    .logo {
+        font-size: 3rem;
+        color: $dark;
+        font-weight: bolder;
+        span {
+            color: $pink;
+        }
+    }
+    .navbar {
+        a {
+            font-size: 2rem;
+            padding: 0 1.5rem;
+            color: $dark;
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+    .icons {
+        display: flex;
+        a {
+            font-size: 2.5rem;
+            margin-left: 1.5rem;
+            color: $dark;
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+    #toggler {
+        display: none;
+    }
+    .menu-bar {
+        font-size: 3rem;
+        color: $dark;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.5rem;
+        cursor: pointer;
+        border: 0.1rem solid $dark;
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        .menu-bar {
+            display: block;
+        }
+        .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: whitesmoke;
+            border-top: 0.1rem $dark solid;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            a {
+                margin: 1.5rem;
+                padding: 1.5rem;
+                background-color: white;
+                border: 0.1rem solid $dark;
+                display: block;
+            }
+        }
+        #toggler:checked ~ .navbar {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    .header {
+        padding: 2rem;
+    }
+}
