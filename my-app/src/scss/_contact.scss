@@ -1,0 +1,41 @@
+.contect {
+    .row {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 1.5rem;
+        align-items: center;
+
+        form {
+            flex: 1 1 40rem;
+            padding: 2rem 2.5rem;
+            box-shadow: $boxShadow;
+            border: 0.1rem solid $dark;
+            background-color: white;
+            border-radius: .5rem;
+            .box{
+                padding: 1rem;
+                font-size: 1.7rem;
+                color: $dark;
+                text-decoration: none;
+                border: .1rem solid $dark;
+                border-radius: .5rem;
+                margin: .7rem 0;
+                resize: none;
+                width: 100%;
+
+                &:focus{
+                    border-color: $pink;
+                }
+            }
+            textarea{
+                width: 15rem;
+            }
+        }
+        .image {
+            flex: 1 1 40rem;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

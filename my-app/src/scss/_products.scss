@@ -1,0 +1,102 @@
+.products {
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        .box {
+            flex: 1 1 40rem;
+            box-shadow: $boxShadow;
+            border-radius: 0.5rem;
+            border: 0.1rem solid $dark;
+            position: relative;
+
+            &:hover {
+                .image {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+
+                .image .icons{
+                    bottom: 0;
+                }
+            }
+
+            .discount {
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+                padding: 0.7rem 1rem;
+                font-size: 2rem;
+                color: $dark-pink;
+                background-color: rgb(254, 216, 223);
+                z-index: 1;
+                border-radius: 0.5rem;
+            }
+
+            .image {
+                position: relative;
+                text-align: center;
+                padding-top: 2rem;
+                overflow: hidden;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                .icons {
+                    position: absolute;
+                    bottom: -7rem;
+                    left: 0;
+                    display: flex;
+                    width: 100%;
+                    a{
+                        width: 50%;
+                        height: 5rem;
+                        line-height: 5rem;
+                        background-color: $pink;
+                        font-size: 2rem;
+                        color: white;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover{
+                            background-color: $dark-pink;
+                        }
+                    }
+
+                    .cart-btn{
+                        width: 100%;
+                        border-left: .1rem solid $milk-white;
+                        border-right: .1rem solid $milk-white;
+                    }
+                }
+            }
+
+            .content{
+                padding: 2rem;
+                text-align: center;
+
+                h3{
+                    font-size: 2.5rem;
+                    color: $dark;
+                }
+
+                .price{
+                    font-size: 2.5rem;
+                    color: $pink;
+                    padding-top: 1rem;
+                    font-weight: bolder;
+
+                    span{
+                        font-size: 1.5rem;
+                        color: gray;
+                        text-decoration: line-through;
+                        font-weight: lighter;
+                    }
+                }
+            }
+        }
+    }
+}

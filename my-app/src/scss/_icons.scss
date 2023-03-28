@@ -1,0 +1,48 @@
+.icons-container{
+    background-color: $milk-white;   
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .icons{
+        background-color: white;
+        border: .1rem solid $dark;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        flex: 1 1 25rem;
+        border-radius: .5rem;
+        img{
+            height: 5rem;
+            width: 5rem;
+            margin-right: 2rem;
+        }
+        .info{
+            h3{
+                color: $dark;
+                padding-bottom: .5rem;
+                font-size: 1.5rem;
+            }
+            span{
+                color: gray;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .icons-container{
+        .icons{
+            h3{
+                font-size: 2rem;
+            }
+            span{
+                font-size: 1.7rem;
+            }
+        }
+    }
+}

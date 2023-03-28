@@ -1,0 +1,47 @@
+.footer{
+    .box-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+
+        .box{
+            flex: 1 1 25rem;
+            h3{
+                color: $dark;
+                font-size: 2.5rem;
+                padding: 1rem 0;
+            }
+            a{
+                color: grey ;
+                font-size: 1.5rem;
+                padding: 1rem 0;
+                display: block;
+
+                &:hover{
+                    color: $pink;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+
+            img{
+                margin-top: 1rem;
+                width: 20rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .credit{
+        text-align: center;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        padding-top: 2.5rem;
+        font-size: 2rem;
+        color: $dark;
+        border-top: .1rem solid $dark;
+        span{
+            color: $pink;
+        }
+    }
+}
