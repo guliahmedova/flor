@@ -1,4 +1,4 @@
-import img from '../images/contact.avif';
+import img from '../../public/images/contact.avif';
 
 const Contact = () => {
     return (
