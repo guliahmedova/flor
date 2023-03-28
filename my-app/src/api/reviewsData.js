@@ -1,7 +1,7 @@
 export default [
     {
         id: 1,
-        img: 'p1.jpg',
+        img: '../images/p1.jpg',
         name: "jong doe",
     },
     {

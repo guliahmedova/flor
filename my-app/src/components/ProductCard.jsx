@@ -1,11 +1,12 @@
 import { AiFillHeart, AiOutlineShareAlt } from 'react-icons/ai';
-import img from '../images/b-removebg-preview.png'
+
 const ProductCard = (props) => {
     return (
         <div className="box">
             <span className="discount">{props.discount}</span>
             <div className="image">
-                <img src={img} alt="" />
+                <div className="gradiant"></div>
+                <img src={props.img} alt="" />
                 <div className="icons">
                     <a href="#"><AiFillHeart /></a>
                     <a href="#" className='cart-btn'>add to cart</a>
